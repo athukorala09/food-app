@@ -1,0 +1,53 @@
+.sidebar {
+    width: 18%;
+    min-height: 100vh;
+    border-right: 1px solid #ade8ad; /* Navbar එකේ බෝඩර් එකට ගැලපෙන ලා කොළ පාට */
+    background-color: white;
+}
+
+.sidebar-options {
+    padding-top: 50px;
+    padding-left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #a9a9a9;
+    border-right: 0;
+    padding: 8px 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.sidebar-option img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+
+.sidebar-option p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #494949;
+}
+
+
+.sidebar-option:hover {
+    background-color: #f9fff9; 
+    border-color: #ade8ad;
+}
+
+
+.sidebar-option.active {
+    background-color: #fff4f2; 
+    border-color: #ff6347;
+}

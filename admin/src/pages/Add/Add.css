@@ -1,0 +1,81 @@
+/* මුළු add පේජ් එකම flexbox එකක් කර content එක සකස් කිරීම */
+.add {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #01020f;
+    font-size: 16px;
+}
+
+/* පොදුවේ හැම flex-col ක්ලාස් එකක් සඳහාම column layout එක දීම */
+.add .flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Form එක ඇතුලේ තියෙන input fields වල text පාට සහ බෝඩර් හැඩ ගැන්වීම */
+.add form input, 
+.add form textarea, 
+.add form select {
+    padding: 10px;
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Input ක්ලික් කරපු වෙලාවට border එක කළු පාට වීමට */
+.add form input:focus, 
+.add form textarea:focus, 
+.add form select:focus {
+    border-color: #000;
+}
+
+/* ─── Image Upload Area ─── */
+.add-img-upload img {
+    width: 120px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* ─── Product Name & Description ─── */
+.add-product-name input {
+    max-width: 400px;
+}
+
+.add-product-desc textarea {
+    max-width: 400px;
+    resize: none; /* User ට ඇදලා ලොකු කුඩා කරන්න බැරි වෙන ලෙස */
+}
+
+/* ─── Category සහ Price දෙක පැත්තෙන් පැත්තට තැබීම ─── */
+.add-category-price {
+    display: flex;
+    gap: 30px;
+    max-width: 400px;
+}
+
+.add-category select, 
+.add-price input {
+    width: 100%;
+}
+
+/* ─── Submit Button (Add Button) ─── */
+.add-btn {
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: #ff6347; /* Tomato Theme එකේ රතු/තැඹිලි පාට */
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.add-btn:hover {
+    background-color: #e55338; /* Mouse එක උඩට ගියාම පාට තද වීමට */
+}

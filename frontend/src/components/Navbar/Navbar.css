@@ -1,0 +1,134 @@
+.navbar {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo { width: 150px; }
+
+/* මෙනු බොත්තම් වල පෙනුම */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-button {
+    text-decoration: none;
+    background-color: #fff0ed; 
+    color: tomato;
+    font-weight: 500;
+    
+    /* මෙන්න මෙතන padding එක අඩු කළා (පැරණි එක 10px 22px) */
+    padding: 6px 16px; 
+    
+    /* මෙතන font-size එකකුත් එකතු කළා */
+    font-size: 14px; 
+    
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    border: 2px solid tomato;
+}
+
+/* ක්ලික් කළ විට (Active) තද පැහැය */
+.menu-button.active {
+    background-color: tomato;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 99, 71, 0.3);
+}
+
+/* Rider Panel Button */
+.rider-panel-btn {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.rider-panel-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Sign In Button */
+.sign-in-btn {
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    color: tomato;
+    border: 2px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: tomato;
+    color: white;
+}
+
+/* Dropdown සහ අනෙකුත් කොටස් */
+.navbar-profile { position: relative; cursor: pointer; }
+.nav-profile-dropdown {
+    position: absolute; display: none; right: 0; top: 35px; z-index: 10;
+    background-color: #fff; padding: 15px; border-radius: 10px;
+    border: 1px solid #ddd; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    list-style: none;
+}
+.navbar-profile:hover .nav-profile-dropdown { display: flex; flex-direction: column; gap: 10px; }
+.nav-profile-dropdown li { display: flex; align-items: center; gap: 10px; width: 100px; }
+.nav-profile-dropdown li:hover { color: tomato; }
+
+.navbar-right { display: flex; align-items: center; gap: 25px; }
+.navbar-right img { width: 22px; cursor: pointer;filter: invert(1) brightness(1.5); }
+.navbar-search-icon { position: relative; display: flex; align-items: center; }
+.navbar-right .dot {
+    position: absolute; min-width: 8px; min-height: 8px;
+    background-color: tomato; border-radius: 50%; top: -4px; right: -4px;
+}
+/* Dropdown හි Orders සහ Logout මත මවුස් එක ගෙන ගිය විට සිදුවන වෙනස පමණි */
+.nav-profile-dropdown li:hover { 
+    background-color: rgba(255, 99, 71, 0.15); /* ලා තැඹිලි පසුබිම */
+    color: tomato;                             /* තැඹිලි අකුරු */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* අයිකන් එකේ පාට වෙනස් වීමට (අවශ්‍ය නම්) */
+.nav-profile-dropdown li:hover img {
+    filter: invert(45%) sepia(85%) saturate(2500%) hue-rotate(350deg) brightness(95%) contrast(90%);
+}
+.mic-btn {
+  background-color: #ffb74d; /* සැහැල්ලු තැඹිලි පැහැය (Light Orange) */
+  color: #fff;              /* අකුරු පැහැදිලි වීමට සුදු පැහැය */
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;        /* බොත්තම විශාල කිරීමට padding වැඩි කළා */
+  border-radius: 20px;      /* ලස්සන වටකුරු හැඩය */
+  display: flex;
+  align-items: center;
+  gap: 8px;                 /* අයිකනය සහ අකුරු අතර පරතරය */
+  font-size: 14px;          /* අකුරු ප්‍රමාණය තරමක් වැඩි කළා */
+  font-weight: 600;
+  transition: 0.3s;
+  margin-left: 15px;
+  height: 35px;             /* බොත්තමේ උස වැඩි කළා */
+}
+
+.mic-btn:hover {
+  background-color: #ffa726; /* මවුස් එක තැබූ විට තරමක් තද පැහැයක් */
+  transform: scale(1.05);   /* සුළු ප්‍රමාණයකින් ලොකු වේ */
+}

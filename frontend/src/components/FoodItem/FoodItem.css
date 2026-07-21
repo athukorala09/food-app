@@ -1,0 +1,86 @@
+.food-item {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #1e293b; /* Dark theme එකට ගැලපෙන මෘදු අළු-නිල් පැහැය */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* ලස්සන Shadow එකක් */
+    transition: 0.3s;
+    animation: fadeIn 1.5s;
+    overflow: hidden; /* පින්තූරය පිරී පවතින ලෙස */
+}
+
+.food-item:hover {
+    transform: scale(1.03); /* මවුස් එක ගෙන ගිය විට තරමක් ලොකු වේ */
+}
+
+.food-item-image {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.food-item-info {
+    padding: 20px;
+}
+
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.food-item-name-rating p {
+    font-size: 20px;
+    font-weight: 600; /* Outfit font එකට 600 වඩාත් ලස්සනයි */
+    color: #f8fafc; /* සුදු පැහැති නම */
+    font-family: 'Outfit', sans-serif;
+}
+
+.food-item-name-rating img {
+    width: 70px;
+}
+
+.food-item-desc {
+    color: #94a3b8; /* අඳුරු පසුබිමක හොඳින් පෙනෙන මෘදු අළු පාට */
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 10px;
+}
+
+.food-item-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff6e40; /* ඔබට අවශ්‍ය රතු/තැඹිලි පැහැය - දීප්තිමත් ලෙස */
+    font-family: 'Outfit', sans-serif;
+}
+
+.food-item-img-container {
+    position: relative;
+}
+
+.food-item-img-container .add {
+    width: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.food-item-counter {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white; /* Counter එකට සුදු පසුබිම (ඔබ ඉල්ලූ පරිදි) */
+}
+
+.food-item-counter img {
+    width: 30px;
+    cursor: pointer;
+}

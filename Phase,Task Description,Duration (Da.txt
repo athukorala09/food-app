@@ -1,0 +1,21 @@
+Phase,Task Description,Duration (Days),Timeline
+Phase 1,Project Planning & Foundation,07 Days,Week 1
+1.1,"Project Proposal (Problem, Goals, Feasibility)",05 Days,
+1.1.4,Final Proposal Submission,02 Days,
+Phase 2,Requirements & Documentation,14 Days,Week 2 - 3
+2.1,SRS (Functional & Non-Functional),06 Days,
+2.2,"Design (Architecture, ERD, Wireframes)",08 Days,
+Phase 3,Backend & Database Development,35 Days,Week 4 - 8
+3.1,Database Setup & Schema Creation,07 Days,
+3.2.1-2,Server Setup & Core Business Logic,10 Days,
+3.2.3,CRUD Operations (API Development),10 Days,
+3.2.4,Auth (JWT/OAuth) & API Testing,08 Days,
+Phase 4,Frontend Development & Integration,28 Days,Week 9 - 12
+4.1,React Setup & Folder Structure,04 Days,
+4.2,UI Components & Main Pages,12 Days,
+4.3,"Integration (Connecting API, State Management)",12 Days,
+Phase 5,Quality Assurance & Finalization,21 Days,Week 13 - 15
+5.1,"Testing (Unit, Integration, UAT)",10 Days,
+5.2,Bug Fixing & Optimization,07 Days,
+5.2.2-3,Final Deployment & Reporting,04 Days,
+Total,,105 Days,15 Weeks

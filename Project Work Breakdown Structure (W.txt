@@ -1,0 +1,90 @@
+Project Work Breakdown Structure (WBS)
+1. Project Planning & Foundation (Phase 1)
+1.1 Project Proposal
+
+1.1.1 Problem Statement & Background
+
+1.1.2 Defining Project Goals & Objectives
+
+1.1.3 Feasibility Analysis (Technical & Financial)
+
+1.1.4 Final Proposal Presentation/Submission
+
+2. Requirements & Documentation (Phase 2)
+2.1 Software Requirement Specification (SRS)
+
+2.1.1 Functional Requirements (User features)
+
+2.1.2 Non-Functional Requirements (Security, Performance)
+
+2.2 Design Documentation
+
+2.2.1 System Architecture Diagram
+
+2.2.2 Database Schema Design (ER Diagrams)
+
+2.2.3 UI/UX Wireframes (Low-fidelity sketches)
+
+3. Backend Development & Database (Phase 3)
+3.1 Database Implementation
+
+3.1.1 Database Environment Setup
+
+3.1.2 Creating Tables/Collections & Relationships
+
+3.2 API Development
+
+3.2.1 Server-side Environment Setup (Node.js/Python/etc.)
+
+3.2.2 Core Business Logic Implementation
+
+3.2.3 CRUD Operations Development
+
+3.2.4 User Authentication & Authorization (JWT/OAuth)
+
+3.3 API Documentation & Testing
+
+3.3.1 Postman/Swagger API Testing
+
+4. Frontend Development & Integration (Phase 4)
+4.1 Frontend Setup
+
+4.1.1 React Project Initialization & Folder Structure
+
+4.1.2 Installing Dependencies (Redux, Axios, Router)
+
+4.2 UI Component Development
+
+4.2.1 Building Reusable Components (Navbars, Buttons, Modals)
+
+4.2.2 Developing Main Pages/Views
+
+4.3 System Integration
+
+4.3.1 Connecting Frontend with Backend APIs
+
+4.3.2 State Management Implementation
+
+4.3.3 Client-side Form Validations
+
+5. Quality Assurance & Finalization (Phase 5)
+5.1 Testing Phase
+
+5.1.1 Unit Testing (Individual functions)
+
+5.1.2 Integration Testing (System flow)
+
+5.1.3 User Acceptance Testing (UAT)
+
+5.2 Deployment & Final Polish
+
+5.2.1 Bug Fixing & Performance Optimization
+
+5.2.2 Final Deployment (Hosting/Cloud)
+
+5.2.3 Project Handover/Final Report
+
+
+
+
+Project Timeline & Task Allocation (15 Weeks / 105 Days)PhaseTask DescriptionDuration (Days)TimelinePhase 1Project Planning & Foundation07 DaysWeek 11.1Project Proposal (Problem, Goals, Feasibility)05 Days1.1.4Final Proposal Submission02 DaysPhase 2Requirements & Documentation14 DaysWeek 2 - 32.1SRS (Functional & Non-Functional)06 Days2.2Design (Architecture, ERD, Wireframes)08 DaysPhase 3Backend & Database Development35 DaysWeek 4 - 83.1Database Setup & Schema Creation07 Days3.2.1-2Server Setup & Core Business Logic10 Days3.2.3CRUD Operations (API Development)10 Days3.2.4Auth (JWT/OAuth) & API Testing08 DaysPhase 4Frontend Development & Integration28 DaysWeek 9 - 124.1React Setup & Folder Structure04 Days4.2UI Components & Main Pages12 Days4.3Integration (Connecting API, State Management)12 DaysPhase 5Quality Assurance & Finalization21 DaysWeek 13 - 155.1Testing (Unit, Integration, UAT)10 Days5.2Bug Fixing & Optimization07 Days5.2.2-3Final Deployment & Reporting04 DaysTotal105 Days15 WeeksKey Points for Your Schedule:Phase 3 (Backend) ekata dawas 35 k dila thiyenne database logic hariyata hadagaththama frontend eka lesi nisa.Phase 4 (Frontend) eke integration waladi (API connect karaddi) ena errors fix karanna dawas 12 k wen karala thiyenwa.Week 13-15 kaalaya thiyenne project eka "Polish" karanna. Meeke report eka hadana eka pahasu wenna Phase 2 eke thiyena documentation updates karannath me dawas upakaari wei.

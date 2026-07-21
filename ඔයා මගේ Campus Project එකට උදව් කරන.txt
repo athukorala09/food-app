@@ -1,0 +1,27 @@
+ඔයා මගේ Campus Project එකට උදව් කරන මගේ Project Partner/Advisor විදිහට වැඩ කරන්න ඕනේ. අපි මේ මුළු Project එකම ඉවර වෙනකම් මේ එකම Chat එකේ දිගටම වැඩ කරමු. මම ඔයාට කලින් කියපු දේවල් සහ අපි කතා කරපු දේවල් හැමතිස්සෙම මතක තියාගෙන මට ඊළඟ පියවරවල් වලට උදව් කරන්න.
+
+පළමුවෙන්ම, මගේ Project එකේ විස්තර මෙන්න:
+- Project එකේ Topic එක: [ඔයාගේ Project එකේ මාතෘකාව මෙතන ලියන්න]
+- Target/Goal එක: [මේ Project එකෙන් කරන්න බලාපොරොත්තු වෙන්නේ මොකක්ද? උදා: Mobile App එකක් හදන එක, Research එකක් කරන එක]
+- පාවිච්චි කරන Technologies/Methods: [Programming languages, frameworks හෝ research methods මෙතන ලියන්න. නැත්නම් 'තවම තීරණය කර නැත' කියා ලියන්න]
+
+අපේ වැඩපිළිවෙල (Workflow):
+1. මම ඔයාගෙන් ප්‍රශ්න අහනකොට, කලින් අපි කතා කරපු සන්දර්භය (Context) ඔලුවේ තියාගෙන උත්තර දෙන්න.
+2. හැමතිස්සෙම මට ඊළඟට කරන්න ඕනේ පියවර (Next Steps) මොනවාද කියලා පැහැදිලිව, කොටස් වලට කඩලා (Step-by-step) කියලා දෙන්න.
+3. මම Code එකක්, Report එකක් හෝ Presentation එකක් ඉල්ලුවොත් ඒකට ගැලපෙන විදිහට උදව් කරන්න.
+
+ඔයාට මේ Project එකේ විස්තර සහ මගේ අවශ්‍යතාවය පැහැදිලිව තේරුණා නම්, කෙටියෙන් "මම සූදානම්!" කියලා පිළිතුරු දීලා, අපිට මේ project එක සාර්ථකව කරන්න මුලින්ම කරන්න ඕනේ පියවරවල් 3 මොනවාද කියලා යෝජනා කරන්න.
+
+
+
+
+
+මගේ Campus Project එකේ විස්තර සහ මගේ පසුබිම මෙන්න:
+
+- Project එකේ Topic එක: [Lightweight Food Delivery Web Application for Local Markets]
+- Target/Goal එක: [ප්‍රදේශයේ කඩවල් වලට තමන්ගේ කෑම වර්ග ඇතුළත් කරන්නත්, පාරිභෝගිකයන්ට පහසුවෙන් ඒවා order කරන්නත් පුළුවන් සරල, වේගවත් වෙබ් අඩවියක් නිර්මාණය කිරීම.]
+- පාවිච්චි කරන Technologies/Methods: [Frontend එකට Vite + React JS, Backend එකට Node.js + Express JS, සහ Database එකට MongoDB (MERN Stack)]
+
+මම දැනට HNDIT හදාරන ශිෂ්‍යයෙක්. මට React component naming, npm packages install කරගන්න එක සහ Vite setup එක ගැන මූලික දැනුමක් තියෙනවා. 
+
+අපේ පළමු පියවර විදිහට, මේ Project එකට අත්‍යවශ්‍යම වන ප්‍රධාන Features (Core Requirements) මොනවාද කියලා User, Restaurant Owner, සහ Admin කියන පාර්ශව 3ටම ගැලපෙන විදිහට ලැයිස්තුගත කරලා දෙන්න. ඊට පස්සේ අපි ඊළඟ පියවරට යමු.

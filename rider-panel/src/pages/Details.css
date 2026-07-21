@@ -1,0 +1,5 @@
+.details-container { padding: 40px; max-width: 600px; margin: auto; background: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+.order-info { margin: 20px 0; line-height: 2; }
+.action-btns { display: flex; gap: 10px; }
+.accept-btn { background: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+.back-btn { background: #6c757d; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }

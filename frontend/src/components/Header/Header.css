@@ -1,0 +1,87 @@
+.header {
+    height: 34vw;
+    background: url('/header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+    font-weight: 600;
+    color: #f8fafc;
+    font-size: max(4.5vw, 22px);
+    line-height: 1.1;
+}
+
+.header-contents p {
+    color: #cbd5e1;
+    font-size: 1vw;
+    font-family: 'Outfit', sans-serif;
+}
+
+.header-contents button {
+    border: none;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: #ff6e40;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header-contents button:hover {
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+/* දකුණු පස පහළ කෙළවරේ ස්ථාවර බොත්තම සඳහා Styles */
+.ai-chat-fixed-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    
+    background-color: #ff6e40;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+}
+
+.ai-chat-fixed-btn:hover {
+    transform: scale(1.1);
+    background-color: #e24422;
+}
+
+@media (max-width: 750px) {
+    .header-contents {
+        max-width: 65%;
+    }
+    /* Mobile එකේදී බොත්තම ටිකක් පොඩි කිරීමට */
+    .ai-chat-fixed-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        bottom: 20px;
+        right: 20px;
+    }
+}

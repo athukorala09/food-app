@@ -1,0 +1,66 @@
+/* පිටු පසුබිම - නූතන පෙනුමක් සඳහා */
+.rider-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* බොක්ස් එකේ හැඩය සහ සෙවනැලි (Shadows) */
+.rider-login-container {
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rider-login-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.rider-login-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input boxes ලස්සන කිරීම */
+.rider-login-inputs input {
+    padding: 12px 15px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.rider-login-inputs input:focus {
+    border-color: #ff6347; /* තක්කාලි පාටින් Highlight වේ */
+    outline: none;
+}
+
+/* බටන් එකේ පෙනුම */
+.rider-login-container button {
+    padding: 12px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rider-login-container button:hover {
+    background-color: #e5533d;
+    transform: translateY(-2px); /* මවුස් එක ගෙනිච්චම පොඩි චලනයක් */
+}

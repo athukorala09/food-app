@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+    border-bottom: 1px solid #ade8ad; 
+    background-color: white;
+}
+
+
+.navbar .logo {
+    max-width: max(10%, 140px); 
+    object-fit: contain;
+}
+
+
+.navbar .profile {
+    width: 65px;         
+    height: 65px;; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+.navbar-home-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 20px; /* Logo සහ Profile අතර පරතරය තබයි */
+    transition: 0.3s;
+}
+
+.navbar-home-btn:hover {
+    background-color: #0056b3;
+}
