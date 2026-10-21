@@ -8,14 +8,14 @@ const ChatBot = ({ onClose }) => {
   const handleSend = async () => {
     if (!input.trim()) return;
 
-    // 1. පාවිච්චි කරන්නාගේ පණිවිඩය UI එකේ පෙන්වීම
+    // 1. show the message in UI
     const newMessages = [...messages, { sender: 'user', text: input }];
     setMessages(newMessages);
     const userQuestion = input;
     setInput('');
 
     try {
-      // 2. Backend එකට පණිවිඩය යැවීම
+      // 2. send to backend
       const response = await fetch('http://localhost:4000/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -24,7 +24,7 @@ const ChatBot = ({ onClose }) => {
 
       const data = await response.json();
 
-      // 3. AI ගේ පිළිතුර UI එකට එකතු කිරීම
+      // 3. AI answer show UI
       if (data.reply) {
         setMessages([...newMessages, { sender: 'bot', text: data.reply }]);
       } else {

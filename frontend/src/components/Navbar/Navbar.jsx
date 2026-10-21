@@ -41,12 +41,12 @@ const Navbar = ({ setShowLogin }) => {
       </ul>
 
       <div className="navbar-right">
-        {/* Rider Panel බොත්තම නැවතත් එකතු කළා */}
+        
         <a href="http://localhost:5175" target="_blank" rel="noopener noreferrer" className="rider-panel-btn">
             🏍️ Are you our Rider?
         </a>
 
-        {/* Voice Search බොත්තම */}
+    
         <button onClick={startListening} className="mic-btn">
   🎙️ <span>Easy Search</span>
 </button>

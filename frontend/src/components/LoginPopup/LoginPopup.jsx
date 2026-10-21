@@ -12,11 +12,11 @@ const LoginPopup = ({ setShowLogin }) => {
     name: "", 
     email: "", 
     password: "",
-    confirmPassword: "", // Confirm Password සඳහා
+    confirmPassword: "", 
     newPassword: "" 
   })
 
-  // පාස්වර්ඩ් පෙන්වීම/සැඟවීම පාලනය කිරීමට
+  // show or hide password
   const [showPassword, setShowPassword] = useState(false)
   const [showConfirmPassword, setShowConfirmPassword] = useState(false) // Confirm password සඳහා වෙනම toggle එකක්
 
@@ -28,7 +28,7 @@ const LoginPopup = ({ setShowLogin }) => {
   const onLogin = async (event) => {
     event.preventDefault()
     
-    // Sign Up අවස්ථාවේදී Password සහ Confirm Password සමාන දැයි පරීක්ෂා කිරීම
+    // in signup function check the password and conformpassword are same
     if (currState === "Sign Up" && data.password !== data.confirmPassword) {
         alert("Passwords do not match!");
         return;

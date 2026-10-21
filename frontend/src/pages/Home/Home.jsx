@@ -10,15 +10,15 @@ const Home = () => {
   const [category, setCategory] = useState("All");
   const { searchQuery, setSearchQuery } = useContext(StoreContext); 
 
-  // මෙනුවෙන් Category එකක් ක්ලික් කළ විට ක්‍රියාත්මක වන Function එක
+  // click the menu item ,start this function
   const handleCategoryChange = (newCategory) => {
     // 1. කලින් තිබූ Category එකම නම් "All" කරන්න, නැත්නම් අලුත් එක තෝරන්න
     setCategory(prev => prev === newCategory ? "All" : newCategory);
-    // 2. අනිවාර්යයෙන්ම Voice Search එක clear කරන්න
+    // 2. clear the voice search 
     setSearchQuery(""); 
   };
 
-  // Voice Search කළ විට Category එක "All" කර Scroll කිරීම
+  // Voice Search , Category  "All"  to Scroll 
   useEffect(() => {
     if (searchQuery !== "") {
       setCategory("All");
@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <div>
       <Header />
-      {/* මෙතනදී handleCategoryChange function එක යවන්න */}
+      
       <ExploreMenu category={category} setCategory={handleCategoryChange} />
       <FoodDisplay category={category} />
       <AppDownload />

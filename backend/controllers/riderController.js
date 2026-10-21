@@ -57,9 +57,9 @@ const loginRider = async (req, res) => {
             return res.json({ success: false, message: "Invalid credentials" });
         }
 
-        const token = createToken(rider._id); // ඔබේ ටෝකන් එක සාදන ෆන්ක්ෂන් එක
+        const token = createToken(rider._id); // The function of your token
 
-        // importan part 
+        // important part 
         res.json({ 
             success: true, 
             token, 

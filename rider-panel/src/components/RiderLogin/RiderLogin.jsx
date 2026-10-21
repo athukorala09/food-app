@@ -12,7 +12,7 @@ const RiderLogin = () => {
   const onLogin = async (event) => {
     event.preventDefault();
     console.log("Rider logging in with:", data);
-    // මෙතැනදී අපි Backend එකට request එකක් යවනවා (පසු පියවරේදී)
+  
     alert("Rider Login functionality will be connected soon!");
   };
 

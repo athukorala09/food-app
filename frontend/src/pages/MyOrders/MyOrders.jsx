@@ -9,7 +9,7 @@ const MyOrders = () => {
     const [data, setData] = useState([]);
 
    const fetchOrders = async () => {
-    // පහත පේළියේ token: token ලෙස වෙනස් කරන්න
+    
     const response = await axios.post(url + "/api/order/userorders", {}, { headers: { token } });
     setData(response.data.data);
 };

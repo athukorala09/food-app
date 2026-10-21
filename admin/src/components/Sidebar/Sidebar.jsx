@@ -9,19 +9,23 @@ const Sidebar = () => {
       <div className='sidebar-options'>
         
         <NavLink to='/add' className='sidebar-option'>
-          <img src={assets.add_icon} alt="Add" />
+          <div className="sidebar-icon-wrapper">
+            <img src={assets.add_icon} alt="Add" />
+          </div>
           <p>Add Items</p>
-          </NavLink>
+        </NavLink>
        
-        
         <NavLink to='/list' className='sidebar-option'>
-          <img src={assets.order_icon} alt="List" />
+          <div className="sidebar-icon-wrapper">
+            <img src={assets.order_icon} alt="List" />
+          </div>
           <p>List Items</p>
-          </NavLink>
+        </NavLink>
         
-        
-      <NavLink to='/order' className='sidebar-option'>
-          <img src={assets.order_icon} alt="Orders" />
+        <NavLink to='/order' className='sidebar-option'>
+          <div className="sidebar-icon-wrapper">
+            <img src={assets.order_icon} alt="Orders" />
+          </div>
           <p>Orders</p>
         </NavLink>
 
@@ -30,4 +34,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default Sidebar;

@@ -79,7 +79,7 @@ const PlaceOrder = () => {
         <input required name='email' onChange={onChangeHandler} value={data.email} type="email" placeholder='Email address'/>
         <input required name='street' onChange={onChangeHandler} value={data.street} type="text" placeholder='Street'/>
         
-        {/* City වෙනුවට ඩ්‍රොප්ඩවුන් ලැයිස්තුව සහ State සඳහා මුල් පරිදිම input එක */}
+        
         <div className='multi-field'>
           <select required name='city' onChange={onChangeHandler} value={data.city}>
             <option value="">Select District</option>

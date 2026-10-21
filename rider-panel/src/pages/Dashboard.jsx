@@ -13,7 +13,7 @@ const Dashboard = () => {
   const [riderName, setRiderName] = useState("");
   const navigate = useNavigate();
 
-  // 1. පරණ සහ අලුත් ඇණවුම් දෙකම ගන්නා function එක
+  
   const fetchAllOrders = async () => {
     try {
       const response = await axios.get("http://localhost:4000/api/order/list");
@@ -28,7 +28,7 @@ const Dashboard = () => {
   useEffect(() => {
     setRiderName(localStorage.getItem("riderName") || "Rider");
     
-    // පැනලය ඕපන් කරපු ගමන් පරණ ඇණවුම් ටික ගන්න
+    
     fetchAllOrders();
 
     const savedOrder = localStorage.getItem("activeOrder");
@@ -66,17 +66,16 @@ const Dashboard = () => {
   };
 
  const handleLogout = () => {
-    // 1. දත්ත මකා දමන්න
+   
     localStorage.clear(); 
     
-    // 2. ප්‍රධාන Home page එකට යන්න 
-    // මෙතැන "/" යනු ඔබේ App එකේ ප්‍රධාන පිටුවයි.
+    
     window.location.replace("/"); 
 };
 
   return (
     <div className="dashboard-container">
-      {/* Navbar කොටස */}
+     
       <nav className="navbar">
         <div className="navbar-logo">
            <span>🚗</span> <span>🏍️</span> <h2>Rider Panel</h2>
@@ -88,7 +87,7 @@ const Dashboard = () => {
         </div>
       </nav>
 
-      {/* Active Order Box */}
+      
       {activeOrder && (
         <div className="active-order-box">
           <h3>Your Current Delivery</h3>
@@ -100,7 +99,7 @@ const Dashboard = () => {
         </div>
       )}
 
-      {/* Orders List කොටස */}
+      
       <h3>New Orders ({orders.length})</h3>
       <div className="orders-list">
         {orders.length === 0 ? (

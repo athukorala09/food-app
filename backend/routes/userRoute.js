@@ -5,6 +5,6 @@ const userRouter = express.Router()
 
 userRouter.post("/register", registerUser)
 userRouter.post("/login", loginUser)
-userRouter.post("/reset-password", resetPassword) // අලුතින් එකතු කළ Forgot Password Route එක
+userRouter.post("/reset-password", resetPassword) 
 
 export default userRouter;

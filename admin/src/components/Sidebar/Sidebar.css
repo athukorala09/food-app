@@ -1,53 +1,122 @@
+/* --- Sidebar Main Container Styling --- */
 .sidebar {
-    width: 18%;
+    width: 260px;
     min-height: 100vh;
-    border-right: 1px solid #ade8ad; /* Navbar එකේ බෝඩර් එකට ගැලපෙන ලා කොළ පාට */
-    background-color: white;
+    /* Admin details පවතින ප්‍රදේශයෙන් (main background එකෙන්) සම්පූර්ණයෙන්ම වෙනස් කර හඳුනාගත හැකි ලස්සන ලා පැහැති ග්‍රේඩියන්ට් පසුබිමක් */
+    background: linear-gradient(145deg, #3d0fc7 0%, #79b9e3 100%);
+    border-right: 1px solid #74e7ce;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar-options {
-    padding-top: 50px;
-    padding-left: 20%;
+    padding: 35px 18px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 14px;
 }
 
+/* --- Sidebar Buttons (Options) Styling --- */
 .sidebar-option {
     display: flex;
     align-items: center;
-    gap: 12px;
-    border: 1px solid #a9a9a9;
-    border-right: 0;
-    padding: 8px 10px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    gap: 14px;
+    padding: 14px 18px;
+    border-radius: 14px;
     cursor: pointer;
+    text-decoration: none;
+    /* බටන් එකට වෙනම ලස්සන ලා පැහැති පසුබිමක් සහ බෝඩර් එකක් */
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid #bae6fd;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(14, 165, 233, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #f0f9ff;
     transition: all 0.3s ease;
 }
 
-
 .sidebar-option img {
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
+    filter: grayscale(100%) opacity(0.6);
+    transition: all 0.3s ease;
 }
-
 
 .sidebar-option p {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
-    color: #494949;
+    color: #334155;
+    margin: 0;
+    transition: color 0.3s ease;
 }
 
-
+/* --- Hover Effect (මවුස් එක ගෙනියද්දී සිදුවන වෙනස්වීම) --- */
 .sidebar-option:hover {
-    background-color: #f9fff9; 
-    border-color: #ade8ad;
+    background: #01061d !important; /* ලස්සන බ්‍රයිට් ප්‍රොෆෙෂනල් නිල් පැහැයක් */
+    border-color: #0284c7 !important;
+    transform: translateX(6px);
+    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.25);
 }
 
+.sidebar-option:hover .sidebar-icon-wrapper {
+    background: rgba(255, 255, 255, 0.25);
+}
 
+.sidebar-option:hover p {
+    color: #ffffff !important; /* හොවර් කරද්දී අකුරු පැහැදිලි සුදු පාට වීම */
+    font-weight: 600;
+}
+
+.sidebar-option:hover img {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+}
+
+/* --- Active State (තෝරාගත් බටන් එක සඳහා) --- */
 .sidebar-option.active {
-    background-color: #fff4f2; 
-    border-color: #ff6347;
+    background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+    border-color: transparent;
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
+}
+
+/* වම්පසින් පෙන්වන සුදු පාට දිදුලන ඉර (Accent Indicator) */
+.sidebar-option.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 60%;
+    background: #ffffff;
+    border-radius: 0 4px 4px 0;
+}
+
+.sidebar-option.active .sidebar-icon-wrapper {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.sidebar-option.active img {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+}
+
+.sidebar-option.active p {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 }

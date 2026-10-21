@@ -1,5 +1,5 @@
 import express from "express";
-// මෙතනට addFoodList එකත් import කරගන්න ඕනේ
+
 import { addFood, listFood, addFoodList,removeFood } from "../controllers/foodController.js";
 import multer from "multer";
 

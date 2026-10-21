@@ -26,17 +26,16 @@ const Details = () => {
 
   const handleAccept = async () => {
     try {
-        // 1. Socket හරහා අනෙක් රයිඩර්ලාට දැනුම් දීම
+        // 1. inform other riders via soket
         socket.emit("acceptOrder", orderId);
         
-        // 2. අලුත් SMS සේවාව සහ Status Update කිරීම (Backend වෙත යැවීම)
-        // මෙහි order.address.phone යනු පාරිභෝගිකයාගේ අංකයයි
+       //send sms to the backend
         await axios.post("http://localhost:4000/api/order/accept", {
             orderId: orderId,
             phoneNumber: order.address.phone 
         });
 
-        // 3. සම්පූර්ණ order දත්තයම LocalStorage හි තැන්පත් කරන්න
+        // 3. store order details
         localStorage.setItem("activeOrder", JSON.stringify({
             orderId: order._id,
             amount: order.amount,
